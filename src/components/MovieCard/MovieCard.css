@@ -1,47 +1,49 @@
 .movie-card {
-    width: 240px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background-color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    margin: 10px;
+    width: 260px;
+    padding: 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .movie-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.7);
   }
   
   .movie-card h2 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.5em;
   }
   
   .movie-card p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
+    color: #bbb;
   }
   
-  .movie-card button {
+  
+  .favorite-button {
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #ff4081; /* צבע לב אדום */
     transition: transform 0.2s;
   }
   
-  .movie-card button:hover {
+  .favorite-button:hover {
     transform: scale(1.2);
+  }
+
+  .readMore{
+    color: #f1c40f; 
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
   }
   
   .movie-card .release-date {
@@ -63,5 +65,11 @@
       width: 100%;
       max-width: 350px;
     }
+  }
+
+  .container-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
   }
   
